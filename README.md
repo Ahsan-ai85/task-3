@@ -1,106 +1,55 @@
-
-# 🚀 Scalable Internship Management System
+# ☁️ Cloud-Based File Storage System
 
 ## 📌 Project Overview
 
-This project implements a scalable cloud-based database system for managing intern applications and records for Internee.pk.
+This project implements a secure and scalable cloud-based file storage system for Internee.pk to store and retrieve intern documents.
 
-The system migrates an existing MySQL database to a managed cloud database service (AWS RDS / GCP Cloud SQL / Azure SQL Database) and enables read replicas to improve performance, availability, and scalability.
+The system uses AWS S3 / GCP Cloud Storage / Azure Blob Storage to securely manage:
+
+- Joining Letters
+- Certificates
+- Internship Reports
+
+Secure file sharing is implemented using Signed URLs to allow temporary access to private files.
 
 ---
 
 ## 🎯 Objective
 
-To design and deploy a highly available, scalable, and production-ready database architecture capable of:
+To design and deploy a secure cloud storage solution that:
 
-- Managing intern applications efficiently
-- Supporting high traffic loads
-- Improving read performance using replicas
-- Ensuring data reliability and backup
-- Providing secure cloud-based access
-
----
-
-## 🏗️ Architecture Overview
-
-Core Components:
-
-- Cloud Managed Database (RDS / Cloud SQL / Azure SQL)
-- MySQL Database Engine
-- Read Replica(s)
-- IAM / Role-based Access Control
-- Automated Backups
-- Monitoring & Performance Insights
-
----
-
-## ⚙️ Technologies Used
-
-- MySQL
-- AWS RDS / GCP Cloud SQL / Azure SQL Database
-- MySQL Workbench / CLI
-- Cloud Console
-- Git & GitHub
-
----
-
-## 🛠️ Implementation Steps
-
-### 1️⃣ Database Migration
-
-Created managed MySQL instance in the cloud.
-
-# 🚀 Scalable Internship Management System
-
-## 📌 Project Overview
-
-This project implements a scalable cloud-based database system for managing intern applications and records for Internee.pk.
-
-The system migrates an existing MySQL database to a managed cloud database service (AWS RDS / GCP Cloud SQL / Azure SQL Database) and enables read replicas to improve performance, availability, and scalability.
-
----
-
-## 🎯 Objective
-
-To design and deploy a highly available, scalable, and production-ready database architecture capable of:
-
-- Managing intern applications efficiently
-- Supporting high traffic loads
-- Improving read performance using replicas
-- Ensuring data reliability and backup
-- Providing secure cloud-based access
+- Stores intern documents safely
+- Organizes files in structured folders
+- Provides secure temporary access using signed URLs
+- Ensures data encryption and access control
+- Supports scalability and high availability
 
 ---
 
 ## 🏗️ Architecture Overview
 
-Core Components:
+Components:
 
-- Cloud Managed Database (RDS / Cloud SQL / Azure SQL)
-- MySQL Database Engine
-- Read Replica(s)
-- IAM / Role-based Access Control
-- Automated Backups
-- Monitoring & Performance Insights
+- Cloud Storage Service (S3 / Cloud Storage / Blob Storage)
+- Secure Bucket Configuration
+- Folder Structure
+- IAM / Access Control
+- Signed URL Mechanism
+- Encryption (At Rest & In Transit)
 
 ---
 
 ## ⚙️ Technologies Used
 
-- MySQL
-- AWS RDS / GCP Cloud SQL / Azure SQL Database
-- MySQL Workbench / CLI
+- AWS S3 / GCP Cloud Storage / Azure Blob Storage
+- IAM (Identity & Access Management)
 - Cloud Console
+- AWS CLI / gsutil / Azure CLI
 - Git & GitHub
 
 ---
 
-## 🛠️ Implementation Steps
+## 📂 Folder Structure in Storage
 
-### 1️⃣ Database Migration
-
-Created managed MySQL instance in the cloud.
-
-Exported local MySQL database:
-
+Created a storage bucket with the following structure:
 
